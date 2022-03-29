@@ -18,3 +18,11 @@ Or simply
 int[] src = ...
 int[] dest = src.clone();
 
+### SORTING
+Arrays.sort(arr, optionallambda);
+
+### List<Integer> to int[]
+  
+ cannot do list.toArray() -> because Integer is not int[]
+ 
+  use int[] example1 = list.stream().mapToInt(i->i).toArray();
