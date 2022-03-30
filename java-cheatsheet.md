@@ -26,3 +26,14 @@ Arrays.sort(arr, optionallambda);
  cannot do list.toArray() -> because Integer is not int[]
  
   use int[] example1 = list.stream().mapToInt(i->i).toArray();
+
+  
+  ### Array to List
+  
+ Arrays.asList(arr) turns array type to list type. It creates a list wrapper on the array, changing the list will change the underlying array (arr) as well.
+  
+  new ArrayList<Integer>(Arrays.asList(ia)) Arrays.aslist is used to create the list wrapper os list can be pass as constructor to creates new ArrayList.
+ The structure of this new ArrayList is completely independent of the original array. It contains the same elements (both the original array and this new ArrayList reference the same integers in memory), but it creates a new, internal array, that holds the references.
+
+  
+  
